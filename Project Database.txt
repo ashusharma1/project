@@ -1,10 +1,8 @@
 create table agent(
 AgentId int(10) not null auto_increment,
-prefix char(30) not null,
-primary key(AgentId,prefix),
+primary key(AgentId),
 LoginId int(10) not null,
-pref char(30) not null,
-unique(LoginId,pref),
+unique(LoginId),
 LastName varchar(20) not null,
 FirstName varchar(20) not null,
 Password varchar(20) not null,
